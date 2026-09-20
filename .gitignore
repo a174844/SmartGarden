@@ -1,0 +1,27 @@
+# 编译产物
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+build/
+build_arm/
+*.sym.txt
+
+# IDE / 编辑器
+.chk/
+Debug/
+Release/
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+.vscode/
+*.uvguix.*
+*.uvoptx
+*.uvprojx.bak
+.DS_Store
+
+# 上游依赖（ST 的 HAL、CMSIS、FreeRTOS）由 tools/fetch_deps.py 按固定提交号拉取。
+# 两万多行外部代码放进仓库只会把本项目的 diff 淹掉，所以不进版本库。
+third_party/
